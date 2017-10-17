@@ -128,10 +128,10 @@ public class SeriesControler {
 	}
 	
 	public void readAllSeries() {
-		List<Series> list = new ArrayList<>();
+		List<?> list = new ArrayList<>();
 		openSessionFlow();
 		
-		Query<Series> query = session.createQuery("from series");
+		Query<?> query = session.createQuery("from series");
 		list = query.list();
 		view.space();
 		view.printListToString(list);

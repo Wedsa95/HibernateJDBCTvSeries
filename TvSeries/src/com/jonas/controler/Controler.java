@@ -22,11 +22,11 @@ public class Controler {
 	
 	public Controler() {
 		initiateSessionFactory();
-		scan = new Scanner(System.in);
+		
 		
 		
 		while(!exitProgram) {
-			
+			scan = new Scanner(System.in);
 			int firstChoise = 0;
 			view.allCrudChoises();	
 		
